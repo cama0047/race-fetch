@@ -18,7 +18,7 @@ function init() {
             console.log(err);
         })
 
-}
+
 
 
 function go(prom) {
@@ -45,4 +45,6 @@ function go(prom) {
     } else {
         console.log(err);
     }
+}
+
 }
