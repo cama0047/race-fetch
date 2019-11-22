@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="content-security-policy" content="default-src 'self';
-    style-src 'self';
-    connect-src https://gist.githubusercontent.com/prof3ssorSt3v3/ 'self';
-    font-src 'self' data:;
-    script-src 'unsafe-inline' 'self';"/>
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self' data: gap: https://gist.githubusercontent.com/ 'unsafe-eval';
+    media-src * data: * ;
+    connect-src 'self';
+    style-src 'self' 'unsafe-inline';
+    script-src 'self' 'unsafe-inline';
+    img-src 'self' data: * ;
+    font-src 'self' data: * ">
 
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
-
-
     
     <title>Promise race() fetch</title>
+
 </head>
 <body>
     
